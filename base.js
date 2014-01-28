@@ -41,6 +41,7 @@ if (baseurl) {
 	if (localStorage.localLogin == 3) {
 		$("#logoutli").show();
 		$("#loginli").hide();
+		$("backbtn").show(); // CUSTOM
 	} else {
 
 		$("#footout").hide();
@@ -78,15 +79,20 @@ function loginout() {
 	}
 }
 
+// CUSTOM
 function checkuser() {
 	if (localStorage.localLogin != 3) {
 		$("#username").val("");
-		$("#password").val("");;
+		$("#password").val("");
 		$.mobile.changePage("#login");
 	} else {
 		logout();
+		$.username.html("#loggedin");
 	}
 }
+
+// CUSTOM
+
 
 function listArticles() {
 	url = baseurl + '/phonegap/display_view';
