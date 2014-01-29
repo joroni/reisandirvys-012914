@@ -7,7 +7,7 @@
 /* Drupal Paths */
  
 // Site Path (do not use a trailing slash)
-Drupal.settings.site_path = 'http://www.m.reisandirvys.com'; // e.g. http://www.example.com
+Drupal.settings.site_path = 'http://www.drupalgap.org'; // e.g. http://www.example.com
 
 // Default Services Endpoint Path
 Drupal.settings.endpoint = 'drupalgap';
